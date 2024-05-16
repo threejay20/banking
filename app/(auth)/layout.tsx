@@ -13,9 +13,9 @@ export default function RootLayout({
           <Image
             src="/icons/3jay-Horizon.png"
             alt="example"
-            width={500}
-            height={500}
-            className="rounded-l-xl object-contain"
+            width={900}
+            height={1200}
+            className="max-w-1/2 h-auto rounded-l-xl object-contain border-4 border-[#333333]" // Dark gray border
           />
         </div>
       </div>
