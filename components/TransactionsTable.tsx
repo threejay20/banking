@@ -31,6 +31,8 @@ const CategoryBadge = ({ category }: CategoryBadgeProps) => {
 };
 
 const TransactionsTable = ({ transactions }: TransactionTableProps) => {
+  console.log("Transactions received in TransactionsTable:", transactions);
+
   return (
     <Table>
       <TableHeader className="bg-[#f9fafb]">
@@ -61,7 +63,7 @@ const TransactionsTable = ({ transactions }: TransactionTableProps) => {
               <TableCell className="max-w-[250px] pl-2 pr-10">
                 <div className="flex items-center gap-3">
                   <h1 className="text-14 truncate font-semibold text-[#344054]">
-                    {removeSpecialCharacters(t.name)}
+                    {t.name}
                   </h1>
                 </div>
               </TableCell>
